@@ -2,9 +2,9 @@
     &::before{
         content: '';
         display: block;
-        position: relative;
-        top: 30px;
-        left: -10px;
+        position: absolute;
+        top: -5px;
+        left: 0;
         width: 36px;
         height: 36px;
         border-radius: 100%;
