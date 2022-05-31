@@ -1,0 +1,110 @@
+.resume{
+    padding-top: 120px;
+    &__wrapper{
+        max-width: 990px;
+        margin: 0 auto;
+    }
+    &__title{
+        text-align: center;
+        position: relative;
+        @include before_circle;
+        &:before{
+            top: -5px;
+            left: calc(50% - 18px);
+        }
+    }
+    &__subtitle{
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 60px;
+        text-align: center;
+        position: relative;
+        margin-bottom: 85px;
+        @include divider;
+        
+    }
+    &-columns{
+        display: grid;
+        grid-template-columns: repeat(2, 425px);
+        column-gap: 136px;
+        ul{
+            padding-left: 0;
+        }
+        &__item{
+            list-style-type: none;
+            position: relative;
+            &::before{
+                content: '';
+                display: block;
+                height: 100%;
+                width: 2px;
+                background-color: #000;
+                position: absolute;
+                top: 6.5px;
+                left: 7px;
+            }
+        }
+        &__title{
+            padding-left: 46px;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 30px;
+            position: relative;
+            margin-bottom: 0;
+            &::before{
+                content: '';
+                display: block;
+                width: 16px;
+                height: 16px;
+                position: absolute;
+                left: 0;
+                top: 6px;
+                background-color: $main-color;
+                border-radius: 100%;
+            }
+        }
+        &__location{
+            padding-left: 100px;
+            padding-top: 45px;
+            position: relative;
+            &::before{
+                content: '';
+                display: block;
+                height: 2px;
+                width: 36px;
+                background-color: #000;
+                position: absolute;
+                top: 58px;
+                left: 7px;
+            }
+        }
+        &__img{
+            position: absolute;
+            left: 60px;
+            top: 55px;
+            @include before_circle;
+            &:before{
+                left: -17px;
+                top: -14px;
+            }
+        }
+        &__subtitle{
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 21px;
+            margin: 0;
+            }
+        &__text{
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+        }
+        &__descr{
+            padding-top: 12px;
+            padding-left: 43px;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+}

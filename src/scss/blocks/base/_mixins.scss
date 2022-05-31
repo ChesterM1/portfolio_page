@@ -13,4 +13,17 @@
 
     }
 }
+
+@mixin divider{
+    &::before{
+        content: '';
+        display: block;
+        position: absolute;
+        background-color: $main-color;
+        width: 60px;
+        height: 3px;
+        bottom: -25px;
+        left: calc(50% - 30px);
+    }
+}
    
