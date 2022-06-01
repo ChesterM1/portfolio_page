@@ -1,0 +1,102 @@
+.contacts{
+    padding: 120px 0 90px 0;
+    &__wrapper{
+        min-width: 1050px;
+        margin: 0 auto;
+    }
+    &__comtent{
+        display: grid;
+        grid-template-columns: 400px 585px;
+        column-gap: 68px;
+    }
+    &__title{
+        margin-bottom: 0;
+        padding-left: 12px;
+        padding-top: 5px;
+        position: relative;
+        @include before_circle;
+        &:before{
+            top: 0;
+        }
+    }
+    &__subtitle{
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 60px;
+        position: relative;
+        margin-bottom: 0;
+        @include divider;
+        &:before{
+            bottom: 0;
+            left: 0;
+        }
+    }
+    &__text{
+        margin-top: 20px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 21px;
+        margin-bottom: 0;
+    }
+    &-social{
+        margin-top: 20px;
+        object-fit: cover;
+        &__img{
+            margin-right: 25px;
+            img{    
+                transition: all 0.5s;
+                &:hover{
+                    transform: scale(1.4);
+                }
+            }
+            
+        }
+    }
+    &-form{
+        margin-top: 30px;
+        display: grid;
+        grid-template: 45px 190px 45px / repeat(2, 280px);
+        gap: 30px 25px;
+        label{
+            padding: 0 9px;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+            background-color: #fff;
+            position: absolute;
+            top: -10px;
+            left: 12px;
+        }
+        &__area{
+            grid-column: 1 / 4;
+            position: relative;
+        }
+        &__trigger{
+            grid-column: 1 / 4;
+        }
+        &__input-item{
+            position: relative;
+        }
+        &__input{
+            width: 100%;
+            height: 100%;
+            padding: 0 20px;
+        }
+        &__textarea{
+            width: 100%;
+            height: 100%;
+            resize: none;
+            padding: 20px;
+        }
+        &__policy{
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+            margin-left: 35px;
+            input{
+                vertical-align: middle;
+                margin-right: 10px;
+            }
+        }
+    }
+}
