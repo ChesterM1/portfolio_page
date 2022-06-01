@@ -61,14 +61,14 @@
             position: relative;
             @include before_circle;
             &:before{
-                top: -7px;
+                top: -9px;
             }
         }
         &__scale{
             height: 14px;
             border-radius: 4px;
             background-color: #E8E4DE;
-            margin-top: 27px;
+            margin-top: 25px;
         }
         &__bg{
             height: 100%;
