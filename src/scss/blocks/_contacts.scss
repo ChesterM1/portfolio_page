@@ -1,13 +1,18 @@
 .contacts{
     padding: 120px 0 90px 0;
     &__wrapper{
-        min-width: 1050px;
+        max-width: 1050px;
         margin: 0 auto;
     }
-    &__comtent{
+    &__content{
         display: grid;
         grid-template-columns: 400px 585px;
         column-gap: 68px;
+    }
+    &__img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
     }
     &__title{
         margin-bottom: 0;
